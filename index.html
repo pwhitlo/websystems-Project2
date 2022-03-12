@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Travel Bucklist with Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header>
+<nav class="navbar navbar-default navbar-inverse" style="background-color:darkslategrey;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <!--Hamburger icon for window resizing-->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="BootBucketList.html" target="_blank">Travel Bucklist</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">More Info on Places and Things <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="https://en.wikipedia.org/wiki/Angkor_Wat" target="_blank" >Ankor Wat</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Machu_Picchu" target="_blank">Macchu Picchu</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Giza_pyramid_complex" target="_blank">Great Pyramids of Giza</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Teotihuacan" target="_blank">Teotihuacan Pyramids</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Sydney" target="_blank">Sydney, Australia</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Aurora" target="_blank">Auroras</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Rio_de_Janeiro" target="_blank">Rio de Janeiro, Brazil</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Istanbul" target="_blank">Istanbul, Turkey</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Antarctica" target="_blank">Antartica</a></li>
+        </ul>
+      <li><a href="https://nomadparadise.com/summer-vacation-packing-list" target="_blank">Travel Essentials</a></li>
+      <li><a href="https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html" target="_blank">Travel Advisories</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="BootBucketList.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+<section>
+  <div class="container-fluid text-center table-responsive">
+    <div class="container">
+    <h2>My Travel Bucklist</h2>
+      <table class="table table-hover table-striped table-bordered">
+        <thead>
+          <tr><td colspan="2" class="text-center" style="background-color:purple;">10 Places and Things I Want to Visit and See</td></tr>
+          <tr><th class="text-center">Number</th><th class="text-center">Place</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>#1</td><td>Ankor Wat</td></tr><!--Wikipedia&copy;-->
+          <tr><td>#2</td><td>Macchu Picchu</td></tr><!--Wikipedia&copy;-->
+          <tr><td>#3</td><td>Pyramids of Giza</td></tr><!--Wikipedia&copy;-->
+          <tr><td>#4</td><td>Teotihuacan Pyramids</td></tr><!--Burst-->
+          <tr><td>#5</td><td>Sydenry, Australia</td></tr><!--Burst-->
+          <tr><td>#6</td><td>Aurora Borealis</td></tr><!--Wikipedia&copy;-->
+          <tr><td>#7</td><td>Aurora Australis</td></tr><!--Wikipedia&copy;-->
+          <tr><td>#8</td><td>Rio de Janeiro, Brazil</td></tr><!--Wikipedia&copy;-->
+          <tr><td>#9</td><td>Istanbul,Turkey</td></tr><!--Wikipedia&copy;-->
+          <tr><td>#10</td><td>Antartica</td></tr><!--Wikipedia&copy;-->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<section>
+  
+  <!--Thumbnail -->
+  <div class="container-fluid text-center">
+    <h2>Photo Gallery</h2>
+    <p>Click on the photo to enlarge it.</p>
+<div class="container">
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-default"><img src="Ankor_Wat_Cambodia.jpg"  width="304" height="236" data-toggle="modal" data-target="#myModal"></button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Ankor Wat</h4>
+        </div>
+        <div class="modal-body">
+          <img src="Ankor_Wat_Cambodia.jpg" class="img-responsive img-rounded" alt="Ankor Wat">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--Carousel-->
+  <div class="container text-center">
+  <h3>Image Carousel </h3>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+      <li data-target="#myCarousel" data-slide-to="6"></li>
+      <li data-target="#myCarousel" data-slide-to="7"></li>
+      <li data-target="#myCarousel" data-slide-to="8"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="Macchu_Picchu_Peru.jpg" alt="Macchu Picchu" class="img-rounded" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Macchu Picchu, Peru</h3>
+          <p>Wikipedia&copy;</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="Pyramids_of_the_Giza_Necropolis_Egypt.jpg" class="img-rounded" alt="Pyramids of Giza" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Pyramids of the Giza, Egypt</h3>
+          <p>Wikipedia&copy;</p>
+        </div>
+      </div>
+      
+      <div class="item">
+        <img src="Teotihuacan-Pyramids_Mexico.jpg" class="img-responsive img-rounded" alt="Teotihuacan Pyramids" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Teotihuacan Pyramids, Mexico</h3>
+        </div>
+      </div>
+      
+      <div class="item">
+        <img src="Sydney-Opera-House-and-Harbor_Australia.jpg" class="img-responsive img-rounded" alt="Sydney Opera House" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Sydney, Australia</h3>
+        </div>
+      </div>
+      
+      <div class="item">
+        <img src="Aurora_Borealis_and_Australis_Poster.jpg" class="img-responsive img-rounded" alt="Northern and Southern lights" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Aurora Borealis and Australis Poster</h3>
+          <p>Wikipedia&copy;</p>
+        </div>
+      </div>
+      
+      <div class="item">
+        <img src="Cidade_de_luz_e_cor_Rio_de_Janerio.jpg" class="img-responsive img-rounded" alt="Rio de Janeiro, Brazil" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Rio de Janeiro, Brazil</h3>
+          <p>Wikipedia&copy;</p>
+        </div>
+      </div> 
+      
+      <div class="item">
+        <img src="Turkey-3019_-_Hagia_Sophia_(2216460729).jpg" class="img-responsive img-rounded" alt="Hagia Sophia" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Istanbul, Turkey</h3>
+          <p>Wikipedia&copy;</p>
+        </div>
+      </div> 
+      
+      <div class="item">
+        <img src="Kaiserpinguine_mit_Jungen.jpg" class="img-responsive img-rounded" alt="Antartica" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Antartica</h3>
+          <p>Wikipedia&copy;</p>
+        </div>
+      </div> 
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+ </div>
+</section>
+<footer>
+    <div class="row">
+    <div class="col-sm-6">
+      <p>References<br/>
+        Copyrighted Images by <a href="https://en.wikipedia.org/">Wikipedia</a><br/>
+        Free Images by <a href="https://burst.shopify.com/">Burst</a>
+      </p>
+    </div>
+    <div class="col-sm-6">
+      <p>The purpose of this webpage is for educational purposes only and the author claims no rights to images or links found on this webpage .</p>
+      <p>Patricia Whitlock&copy</p>
+    </div>
+    </div>
+</footer>
+</body>
+</html>
